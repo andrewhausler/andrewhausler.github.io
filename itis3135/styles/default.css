@@ -1,0 +1,71 @@
+body {
+    background-color: rgba(173, 170, 170, 0.861);
+    margin: 20px 20px;
+}
+
+nav > a:link, nav > a {
+    color: darkblue;
+}
+
+nav > a:hover {
+    color: black;
+}
+
+small {
+   display: block;
+   margin-top: 20px;
+}
+
+.name {
+    text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+img {
+    height: 380px;
+    width: 320px;
+}
+
+#myimage {
+    border: 2px solid black;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+ul {
+    margin: 0 200px;
+}
+
+.external-links {
+    padding-top: 10px;
+}
+
+#intro-links {
+    padding-top: 10px;
+    text-align: center;
+}
+
+li {
+    font-weight: bold;
+}
+ 
+.intro-descriptions {
+    display: inline;
+    font-weight: normal;
+}
+
+.courses {
+    margin-left: -150px;
+}
+
+.divider {
+    margin: 8px auto;
+    width: 100%;
+    border-bottom: 1px solid black;
+}
