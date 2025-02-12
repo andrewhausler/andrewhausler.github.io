@@ -6,10 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
         <style>
-			body {
+			html, body {
 				background-color: darkgray;
-				margin: 20px 20px;
+				margin: 0;
+                padding: 0;
 			}
+
+            body {
+                margin: 20px 20px;
+            }
 
 			#links {
 				padding-top: 10px;
@@ -21,6 +26,9 @@
 
 			a {
 				color: black;
+                text-decoration: none;
+                margin-left: 10px;
+                margin-right: 10px
 			}
 
 			a:hover {
@@ -71,17 +79,48 @@
                 width: 480px;
                 height: 330px
             }
+
+            label {
+                display: block;
+                font-size: 40px;
+                margin-bottom: 10px;
+            }
+
+            .navs {
+                display: flex;
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            .vertical-bar {
+                font-weight: bold;
+                font-size: 20px;
+                margin: 0;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
 		</style>
     </head>
     <body>
         <header>
             <h1> Andrew Hausler's Webpage </h1>
-            <div class="divider"></div>
+            <nav class="navs">
+                <a href="#intro">Introduction</a>
+                <p class="vertical-bar">||</p>
+                <a href="#car-pictures">Photo Gallery</a>
+                <p class="vertical-bar">||</p>
+                <a href="#links">External Links</a>
+            </nav>
         </header>
         <main>
-            <h2>My Webpage</h2>
-            <p>Hello everyone, you have landed on my webpage. This is my personal based page and is not school related. If you are looking for my school related webpage please click the link down below in the footer. Thx.</p>
-            <section>
+            <h2 id="intro">Introduction</h2>
+            <p for="intro">Hello everyone, you have landed on my webpage. This is my personal based page and is not school related. If you are looking for my school related webpage please click the link down below in the footer. Thx.</p>
+            <label for="car-pictures">Photo Gallery</label>
+            <section id="car-pictures">
                 <img id="lake-pic" src="./itis3135/images/lakepic.jpeg" alt="Car near lake">
                 <img id="railroad-pic" src="./itis3135/images/railroadpic.jpeg" alt="Car near railroad tracks">
                 <img id="spotlight-pic" src="./itis3135/images/spotlightpic.jpeg" alt="Car near street light">
@@ -92,18 +131,19 @@
         </main>
         <footer>
 		<div class="divider"></div>
-        <div id="links">  
-			<nav>
+        <div id="links"> 
+            <label>External Links</label> 
+			<nav class="navs">
                 <a href="https://www.charlotte.edu/">Charlotte.edu</a>
-                ||
+                <p class="vertical-bar">||</p>
                 <a href="https://github.com/andrewhausler?tab=repositories">GitHub</a>
-                ||
+                <p class="vertical-bar">||</p>
                 <a href="https://andrewhausler.github.io/">GitHub.io</a>
-                ||
+                <p class="vertical-bar">||</p>
                 <a href="https://andrewhausler.github.io/itis3135/">ITIS3135.io</a>
-                ||
+                <p class="vertical-bar">||</p>
                 <a href="https://www.linkedin.com/in/andrew-hausler-b64b09324/">LinkedIn</a>
-				||
+				<p class="vertical-bar">||</p>
 				<a href="./itis3135/index.html">ITIS-3135 Course</a>
             </nav>
 		</div>
