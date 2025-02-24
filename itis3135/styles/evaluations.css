@@ -1,0 +1,70 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+header {
+    border-bottom: 3px solid black;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+main {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+}
+
+a > ul > li {
+    color: black;
+    font-style: normal;
+}
+
+div {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: darkgoldenrod;
+}
+
+div:nth-child(1) a {color: red;}
+div:nth-child(2) a {color: orange;}
+div:nth-child(3) a {color: yellow;}
+div:nth-child(4) a {color: green;}
+
+div a:hover {
+    color: black;
+    transition: color .8s ease-in-out;
+}
+
+a:hover {
+    color: goldenrod;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-style: normal;
+    margin: 20px 20px;
+}
+
