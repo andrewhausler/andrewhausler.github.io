@@ -9,7 +9,6 @@
         <style>
 
             img {
-                position: absolute;
                 padding-left: 10px;
                 top: 10px;
             }
@@ -17,13 +16,9 @@
             head, body {
                 margin: 0;
                 padding: 0;
-                width: 100%;
-                height: 100%;
             }
 
             header {
-                margin: 0;
-                padding: 0;
                 width: 100%;
                 left: 0;
                 top: 0;
@@ -42,11 +37,13 @@
                 margin: 40px 200px;
                 background-color: #c4f7a1;
                 padding: 20px;
-                border-radius: 10px;
+                border-radius: 10px; 
+                word-break: break-word;
             }
 
             ul {
                 list-style-type: square;
+                word-break: break-word;
             }
 
             footer {
@@ -64,6 +61,13 @@
 
             strong {
                 padding: 8px;
+            }
+
+            @media (max-width: 800px)
+            {
+                main {
+                    margin-left: 20px;
+                }
             }
 
         </style>

@@ -92,15 +92,32 @@
                 border-bottom: 2px solid black;
                 justify-content: center;
                 align-items: center;
-
+                font-weight: bold;
             }
 
             .vertical-bar {
-                font-weight: bold;
+                font-weight: normal;
                 font-size: 20px;
                 margin: 0;
                 padding-top: 10px;
                 padding-bottom: 10px;
+            }
+
+            @media (max-width: 300px) {
+                .header-nav {
+                    display: block;
+                    text-align: center;
+                }
+            }
+
+            @media (max-width: 630px)
+            {
+                .footer-nav {
+                    display: block;
+                    text-align: center;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
             }
 
 		</style>
@@ -108,7 +125,7 @@
     <body>
         <header>
             <h1> Andrew Hausler's Webpage </h1>
-            <nav class="navs">
+            <nav class="navs header-nav">
                 <a href="#intro">Introduction</a>
                 <p class="vertical-bar">||</p>
                 <a href="#car-pictures">Photo Gallery</a>
@@ -133,7 +150,7 @@
 		<div class="divider"></div>
         <div id="links"> 
             <label>External Links</label> 
-			<nav class="navs">
+			<nav class="navs footer-nav">
                 <a href="https://www.charlotte.edu/">Charlotte.edu</a>
                 <p class="vertical-bar">||</p>
                 <a href="https://github.com/andrewhausler?tab=repositories">GitHub</a>
