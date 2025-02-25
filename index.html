@@ -10,32 +10,32 @@
 				background-color: darkgray;
 				margin: 0;
                 padding: 0;
+                max-width: 1000px;
+                width: 95%;
+                margin: 0 auto;
 			}
+
+            h1 {
+                font-family: "Marker Felt", sans-serif;
+            }
 
             body {
                 margin: 20px 20px;
             }
 
-			#links {
-				padding-top: 10px;
-			}
-
-			.divider {
-				border-bottom: 2px solid black;
-			}
-
 			a {
 				color: black;
                 text-decoration: none;
                 margin-left: 10px;
-                margin-right: 10px
+                margin-right: 10px;
+                transition: color .7s ease-in-out;
 			}
 
 			a:hover {
-				color: red;
+                color: red;
 			}
 
-            section {
+            #car-photos {
                 display: flex;
                 overflow-x: scroll;
                 border: 4px solid black;
@@ -120,6 +120,14 @@
                 }
             }
 
+            #page-identity {
+                text-align: center;
+            }
+
+            .section {
+                font-family: Noto Sans, sans-serif;
+            }
+
 		</style>
     </head>
     <body>
@@ -128,28 +136,32 @@
             <nav class="navs header-nav">
                 <a href="#intro">Introduction</a>
                 <p class="vertical-bar">||</p>
-                <a href="#car-pictures">Photo Gallery</a>
+                <a href="#photo-gallery">Photo Gallery</a>
                 <p class="vertical-bar">||</p>
-                <a href="#links">External Links</a>
+                <a href="#external">External Links</a>
             </nav>
         </header>
         <main>
-            <h2 id="intro">Introduction</h2>
-            <p for="intro">Hello everyone, you have landed on my webpage. This is my personal based page and is not school related. If you are looking for my school related webpage please click the link down below in the footer. Thx.</p>
-            <label for="car-pictures">Photo Gallery</label>
-            <section id="car-pictures">
-                <img id="lake-pic" src="./itis3135/images/lakepic.jpeg" alt="Car near lake">
-                <img id="railroad-pic" src="./itis3135/images/railroadpic.jpeg" alt="Car near railroad tracks">
-                <img id="spotlight-pic" src="./itis3135/images/spotlightpic.jpeg" alt="Car near street light">
-                <img id="night-pic1" src="./itis3135/images/nightpic.jpeg" alt="Car parked in town at night">
-                <img id="night-pic2" src="./itis3135/images/nighttimepic.jpeg" alt="Rear view picture of car at night">
-                <img id="town-pic" src="./itis3135/images/townpic.jpeg" alt="Car in center of town">
+            <h2 id="page-identity">Home</h2>
+            <section>
+                <h2 id="intro" class="section">Introduction</h2>
+                <p>Hello everyone, you have landed on my webpage. This is my personal based page and is not school related. If you are looking for my school related webpage please click the link down below in the footer. Thx.</p>
+            </section>
+            <section>
+                <h2 id="photo-gallery" class="section">Photo Gallery</h2>
+                <section id="car-photos">
+                    <img id="lake-pic" src="./itis3135/images/lakepic.jpeg" alt="Car near lake">
+                    <img id="railroad-pic" src="./itis3135/images/railroadpic.jpeg" alt="Car near railroad tracks">
+                    <img id="spotlight-pic" src="./itis3135/images/spotlightpic.jpeg" alt="Car near street light">
+                    <img id="night-pic1" src="./itis3135/images/nightpic.jpeg" alt="Car parked in town at night">
+                    <img id="night-pic2" src="./itis3135/images/nighttimepic.jpeg" alt="Rear view picture of car at night">
+                    <img id="town-pic" src="./itis3135/images/townpic.jpeg" alt="Car in center of town">
+                </section>
             </section>
         </main>
-        <footer>
-		<div class="divider"></div>
-        <div id="links"> 
-            <label>External Links</label> 
+        <footer> 
+          <section>
+            <h2 id="external" class="section">External Links</h2> 
 			<nav class="navs footer-nav">
                 <a href="https://www.charlotte.edu/">Charlotte.edu</a>
                 <p class="vertical-bar">||</p>
@@ -161,9 +173,11 @@
                 <p class="vertical-bar">||</p>
                 <a href="https://www.linkedin.com/in/andrew-hausler-b64b09324/">LinkedIn</a>
 				<p class="vertical-bar">||</p>
-				<a href="./itis3135/index.html">ITIS-3135 Course</a>
+				<a href="./itis3135/index.html">ITIS 3135 Course</a>
+                <p class="vertical-bar">||</p>
+                <a href="./itis3135/website_evaluations.html">Website Evaluations</a>
             </nav>
-		</div>
+          </section>
         </footer>
     </body>
 </html>

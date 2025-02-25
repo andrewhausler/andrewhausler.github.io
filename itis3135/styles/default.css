@@ -1,10 +1,25 @@
 body {
     background-color: rgba(173, 170, 170, 0.861);
     margin: 20px 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 95%;
 }
 
 nav > a:link, nav > a {
-    color: darkblue;
+    color: darkgreen;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav>a {
+    text-decoration: none;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 nav > a:hover {
@@ -16,8 +31,13 @@ small {
    margin-top: 20px;
 }
 
+h1 {
+    font-family: Gill Sans, sans-serif;
+}
+
 .name {
     text-align: center;
+    font-family: Optima, sans-serif;
 }
 
 figure {
@@ -68,4 +88,8 @@ li {
     margin: 8px auto;
     width: 100%;
     border-bottom: 1px solid black;
+}
+
+small {
+    margin-bottom: 10px;
 }

@@ -1,0 +1,53 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 400px;
+    height: 400px;
+    float: right;
+}
+
+p {
+    bottom: 0%;
+}
+
+h1 {
+    margin-left: 90px;
+    border-bottom: 2px solid black;
+}
+
+h2 {
+    margin-left: 80%;
+}
+
+ul {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+}
+
+li {
+    text-decoration: underline;
+}
+
+#something {
+    text-align: center;
+    font-size: 44;
+    background-color: purple;
+}
+
+h3 {
+    color: yellow;
+    border-top: 10px solid green;
+    border-bottom: 10px solid orange;
+    border-left: 10px solid brown;
+    border-right: 10px solid pink;
+}
+
+h3:hover {
+    color: black;
+}

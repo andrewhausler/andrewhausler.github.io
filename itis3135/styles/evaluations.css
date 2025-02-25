@@ -1,8 +1,10 @@
 html, body {
     box-sizing: border-box;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     background-color: lightgray;
+    width: 95%;
+    max-width: 1000px;
 }
 
 header {
@@ -11,10 +13,12 @@ header {
 
 h1 {
     margin-left: 20px;
+    font-family: Palatino, serif;
 }
 
 h2 {
-    text-decoration: underline;
+    text-align: center;
+    font-family: New Century Schoolbook, sans-serif;
 }
 
 main {
@@ -39,10 +43,10 @@ div {
 
 a {
     text-decoration: none;
-    font-style: italic;
     margin-left: 10px;
     margin-right: 10px;
     color: darkgoldenrod;
+    font-family: Georgia, serif;
 }
 
 div:nth-child(1) a {color: red;}
