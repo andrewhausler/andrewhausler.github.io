@@ -6,24 +6,27 @@ body {
     width: 95%;
 }
 
-nav > a:link, nav > a {
-    color: darkgreen;
+nav > a {
+    color: red;
+    transition: color .5s ease-in-out;
+}
+
+nav > a:hover {
+    color: maroon;
 }
 
 nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 nav>a {
     text-decoration: none;
     padding-left: 10px;
     padding-right: 10px;
-}
-
-nav > a:hover {
-    color: black;
 }
 
 small {
@@ -92,4 +95,27 @@ li {
 
 small {
     margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.icons {
+    width: 30px;
+    height: 30px;
+}
+
+#lower-nav {
+    border-bottom: 2px solid black;
+}
+
+#upper-nav {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.grid-icon {
+    width: 30px;
+    height: 30px;
 }
