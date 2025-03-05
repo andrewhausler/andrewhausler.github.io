@@ -17,13 +17,11 @@
             }
 
             header, body {
-                box-sizing: border-box;
                 margin: 0;
                 padding: 0;
             }
 
             header {
-                width: 100vw;
                 border-bottom: 5px solid #a5b452;
                 background-color: #2e86ab;
                 margin-bottom: 40px;
@@ -37,14 +35,16 @@
             }
 
             main {
-                margin-top: 10px;
-                background-color: #c4f7a1;
-                padding: 20px;
-                border-radius: 10px; 
                 max-width: 1200px;
                 margin: 0 auto;
                 width: 90%;
-                word-wrap: break-word;
+                margin-bottom: 60px;
+            }
+
+            section {
+                padding: 20px;
+                background-color: #c4f7a1;
+                border-radius: 10px; 
             }
 
             ul {
@@ -68,6 +68,14 @@
                 padding: 8px;
             }
 
+            @media (max-width: 600px) {
+                main {
+                    margin-left: 20px;
+                    overflow-x: auto;
+                    word-wrap: break-word;
+                }
+            }
+
         </style>
     </head>
     <body>
@@ -75,18 +83,20 @@
             <h1>Hausler Enterprises <img src="gecko-openclipart-org.jpg" alt="Gecko"></h1>
         </header>
         <main>
-            <h2>Hausler Enterprises Services</h2>
-            <p>Hausler Enterprises provides software services to help in automating parts of your businesss to make your business more efficent.</p>
-            <ul>
-                <li>We can do any nationwide businesses and not just local.</li>
-                <li>Located in Houston, Texas.</li>
-                <li>We offer free estimates over your business needs.</li>
-                <li>Provide monthly plans!</li>
-                <li>You can cancel anytime!</li>
-                <li>We provide a well developed team of professional Software Engineers.</li>
-            </ul>
-            <p>Our mission is to provide you with an effective team of Software Engineers dedicated towards making your business flow better.</p>
-            <p>(704-980-1323) - henterprises@hotmail.com - 73491 Brandon Rd, Houston, Texas</p>
+            <section>
+                <h2>Hausler Enterprises Services</h2>
+                <p>Hausler Enterprises provides software services to help in automating parts of your businesss to make your business more efficent.</p>
+                <ul>
+                    <li>We can do any nationwide businesses and not just local.</li>
+                    <li>Located in Houston, Texas.</li>
+                    <li>We offer free estimates over your business needs.</li>
+                    <li>Provide monthly plans!</li>
+                    <li>You can cancel anytime!</li>
+                    <li>We provide a well developed team of professional Software Engineers.</li>
+                </ul>
+                <p>Our mission is to provide you with an effective team of Software Engineers dedicated towards making your business flow better.</p>
+                <p>(704-980-1323) - henterprises@hotmail.com - 73491 Brandon Rd, Houston, Texas</p>
+            </section>
         </main>
         <footer>
             <strong>Let automation do the work!</strong>
