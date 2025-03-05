@@ -10,20 +10,23 @@
 
             img {
                 padding-left: 10px;
-                top: 10px;
             }
 
-            head, body {
+            body {
+                overflow-x: auto;
+            }
+
+            header, body {
+                box-sizing: border-box;
                 margin: 0;
                 padding: 0;
             }
 
             header {
-                width: 100%;
-                left: 0;
-                top: 0;
+                width: 100vw;
                 border-bottom: 5px solid #a5b452;
                 background-color: #2e86ab;
+                margin-bottom: 40px;
             }
 
             h1 {
@@ -34,11 +37,14 @@
             }
 
             main {
-                margin: 40px 200px;
+                margin-top: 10px;
                 background-color: #c4f7a1;
                 padding: 20px;
                 border-radius: 10px; 
-                word-break: break-word;
+                max-width: 1200px;
+                margin: 0 auto;
+                width: 90%;
+                word-wrap: break-word;
             }
 
             ul {
@@ -48,12 +54,11 @@
 
             footer {
                 position: fixed;
+                bottom: 0;
                 display: flex;
                 background-color: #c8d96f;
                 width: 100%;
-                bottom: 0;
                 justify-content: center;
-                vertical-align: center;
                 align-items: center;
                 border-top: 2px solid #5c573e;
                 font-style: italic;
@@ -61,13 +66,6 @@
 
             strong {
                 padding: 8px;
-            }
-
-            @media (max-width: 800px)
-            {
-                main {
-                    margin-left: 20px;
-                }
             }
 
         </style>

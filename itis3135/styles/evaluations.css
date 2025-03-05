@@ -1,10 +1,13 @@
 html, body {
     box-sizing: border-box;
-    margin: 0 auto;
     padding: 0;
     background-color: lightgray;
-    width: 95%;
-    max-width: 1000px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
 }
 
 header {
