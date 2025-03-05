@@ -7,8 +7,9 @@ html, body {
 
 main {
     background-color: white;
-    margin: 40px 150px;
-    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
     border-radius: 10px;
 }
 
