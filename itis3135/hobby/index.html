@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+        <title>Car Enthusiast</title>
+        <style>
+            html, body {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                background-color: rgb(50, 60, 70);
+                font-family: monospace;
+                min-width: 400px;
+            }
+
+            header {
+                text-align: center;
+                font-size: 20px;
+                color: lightgrey
+            }
+
+            main {
+                max-width: 1200px;
+                margin: 0 auto;
+                color: lightgrey;
+            }
+
+            nav {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background-color: lightcoral;
+                padding: 10px 5px;
+                border-top: solid 2px rgb(255, 0, 0);
+                border-bottom: solid 4px rgb(255, 0, 0);
+                font-size: 15px;
+            }
+
+            nav>a {
+                text-decoration: none;
+                margin-right: 20px;
+                color: darkred;
+                transition: color .5s ease;
+            }
+
+            nav>a:hover {
+                color: white;
+            }
+
+            nav>p {
+                margin-right: 20px;
+            }
+
+            section {
+                margin-left: 20px;
+                font-size: 20px;
+            }
+
+            .about-me {
+                display: none;
+            }
+
+            .home {
+                display: block;
+            }
+
+            .best-times {
+                display: none;
+            }
+
+            .best-locations {
+                display: none;
+            }
+
+            .how {
+                display: none;
+            }
+
+            .why {
+                display: none;
+            }
+
+            .ai-prompts {
+                display: none;
+            }
+            
+            footer {
+                max-width: 1200px;
+                margin: 0 auto;
+                text-align: center;
+                background-color: lightcoral;
+                padding: 20px;
+                border-radius: 50%;
+                color: darkred;
+                margin-bottom: 10px;
+                border: solid 2px rgb(255, 0, 0);
+            }
+
+            footer>small>a, footer>small>i>a {
+                text-decoration: none;
+                color: black;
+            }
+
+            figure {
+                text-align: center;
+            }
+
+            figure>img {
+                border: solid 3px rgb(255, 0, 0);
+            }
+
+            figure>figcaption {
+                font-style: italic;
+            }
+
+            @media (max-width: 770px) {
+                nav {
+                    display: block;
+                    font-size: 30px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="inline">Car Enthusiast</h1>
+            <nav>
+                <p>*</p>
+                <a data-target="about-me" href="">About Me</a>
+                <p>*</p>
+                <a data-target="home" href="">Home</a>
+                <p>*</p>
+                <a data-target="best-times" href="">Best Times</a>
+                <p>*</p>
+                <a data-target="best-locations" href="">Best Locations</a>
+                <p>*</p>
+                <a data-target="how" href="">How</a>
+                <p>*</p>
+                <a data-target="why" href="">Why</a>
+                <p>*</p>
+                <a data-target="ai-prompts" href="">AI Prompts</a>
+                <p>*</p>
+            </nav>
+        </header>
+        <main>
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>Hello! My name is Andrew Hausler and being a car enthusiast is my favorite hobby.</p>
+                <p>I find most of my passion combining both computer science and automotive engineering. There is so much to learn behind these vehicles that we use everyday and being able to constantly learn new things while owning and maintaining a car, I find very enjoyable.</p>
+                <p>Before I was able to drive I actually never thought I would be interesting in cars. But what actually go me into cars was the types of video games I played. I used to play a decent amount of video games that provided the user the ability to customize the way you want your cars to look. These games were Rocket League and Grand Theft Auto IV.</p>
+                <p>Later on I was able to purchase my first which was an Audi. I went with Audi because my biggest focus is the exterior design and structure of the body and no other cars in my opinion were even close to beating the artwork that Audi produces.</p>
+                <figure>
+                    <img src="../images/lakepic.jpeg" alt="Car Photo From Lake">
+                    <figcaption>Photo taken from Blythe Landing.</figcaption>
+                </figure>
+            </section>
+            <section class="home">
+                <h2>Home</h2>
+                <p>Welcome to my Car Enthusiast page!</p>
+                <p>Being a car enthusiast means having a passion in altering the original properties from the manufacturer.</p>
+                <p>Key Components of Car Enthusiasts:</p>
+                <ul>
+                    <li>Performance Tuning: 
+                        <p>     Allows for modifying the air and fuel ratio as well as the throttle response.</p>
+                    </li>
+                    <li>Modifications: 
+                        <p>     Altering anything interior or exterior that is different from the original manufacturer.</p>
+                    </li>
+                    <li>Programming: 
+                        <p>     Adding or altering the code within the car modules.</p>
+                    </li>
+                    <li>Your Own Maintenance: 
+                        <p>     Regularly doing your own mileage checkpoints.</p>
+                    </li>
+                    <li>Exterior/Interior Design: 
+                        <p>     The adding or changing of the structure of the car.</p>
+                    </li>
+                    <li>Detailing: 
+                        <p>     Regularly keeping the structural integrity of the vehicle in good shape.</p>
+                    </li>
+                </ul>
+                <figure>
+                    <img src="../images/townpic.jpeg" alt="Car Photo From Lake">
+                    <figcaption>Photo taken from Birkdale Village.</figcaption>
+                </figure>
+            </section>
+            <section class="best-times">
+                <h2>Best Times</h2>
+                <p>The best times for car enthusiasts is all year long though winter can be harsh depending on where you live.</p>
+                <p>I prefer to work on my car during the night because I find it easier and a less busy time in the day.</p>
+                <figure>
+                    <img src="../images/spotlightpic.jpeg" alt="Car Photo From Lake">
+                    <figcaption>Photo of my car at midnight.</figcaption>
+                </figure>
+            </section>
+            <section class="best-locations">
+                <h2>Best Locations</h2>
+                <p>The best locations for car enthusiasts depend on what you are attempting to do.</p>
+                <p>If you are planning to do work or maintenance a garage would be the best because of the access of tools and a level surface.</p>
+                <p>But if you plan on hanging out with friends and showing off cars usually wide open parking lots that are level are the best.</p>
+                <figure>
+                    <img src="../images/railroadpic.jpeg" alt="Car Photo From Lake">
+                    <figcaption>Photo taken near my local gas-station.</figcaption>
+                </figure>
+            </section>
+            <section class="how">
+                <h2>How</h2>
+                <p>The best way to getting into the car enthusiast hobby is first owning a car. Without a car its hard to stick with it when you don't have a car to work with.</p>
+                <p>The other importance is having responsibilities and taking proper care of your car. Also having a passion towards your car and the wanting to strive towards enhancing the looks, performance and comfort that it's capable of reaching towards.</p>
+                <figure>
+                    <img src="../images/nightpic.jpeg" alt="Car Photo From Lake">
+                    <figcaption>Photo taken right after a clean wash.</figcaption>
+                </figure>
+            </section>
+            <section class="why">
+                <h2>Why</h2>
+                <p>I love cars because of the enjoyment and responsibilities they have to offer.</p>
+                <p>That best part of it for me is allowing your car to be designed to whatever you can imagine. It allows you to drive around with something that is completely different than all the other cars on the road. It feels like your in Grand Theft Auto or inside of the Matrix.</p>
+                <figure>
+                    <img src="../images/nighttimepic.jpeg" alt="Car Photo From Lake">
+                    <figcaption>Rear view photo of my car.</figcaption>
+                </figure>
+            </section>
+            <section class="ai-prompts">
+                <h2>AI Prompts</h2>
+                <p>Here are all the prompts that I used when building this website.</p>
+                <p>The prompts were used using ChatGPT 4o.</p>
+                <p>Prompts:</p>
+                <ul>
+                    <li>
+                        <p>How do you control multiple different section elements so that within a navbar whichever anchor is clicked on should be the only one being display using Javascript and CSS?</p>
+                    </li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <small>Designed by <a href="../hauslerenterprises.com/">Hausler Enterprises</a> &copy; 2025, <i><a href="https://www.freecodecamp.org/certification/Andrew_Hausler/responsive-web-design">Certified in Responsive Web Design</a></i></small>
+        </footer>
+        <script src="./scripts/pageControl.js"></script>
+    </body>
+</html>
