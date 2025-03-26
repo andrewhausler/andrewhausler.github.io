@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Andrew Hausler's Artificial Hellbender || ITIS 3135 Whimsical Company Table</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <i class="fa-solid fa-mug-saucer"></i>
+        <main>
+            <div id="ordered-data">
+                <h2>Whimsical Company Table</h2>
+                <h3>My Tabular Data</h3>
+                <ol>
+                    <li>Christopher Tyrone ctyrone@juno.com 12</li>
+                    <li>Joseph Fairly jfairly@hotmail.com 1</li>
+                    <li>Lacy Yells lyells@prodigy.net 5</li>
+                    <li>Matt Stewart mstewart@msn.com 8</li>
+                    <li>Chester Stone cstone@yahoo.com 11</li>
+                    <li>Tracey Stewart tstewart@lycos.com 3</li>
+                    <li>Jack Carly jcarly@rocketmail.com 10</li>
+                    <li>Nathan Reade nreade@bbn.com 18</li>
+                </ol>
+            </div>
+            <h3>Employee Data in Simple Table</h3>
+            <div id="table1">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                        <tr>
+                            <td>Christopher Tyrone</td>
+                            <td>ctyrone@juno.com</td>
+                            <td>$12.8B</td>
+                        </tr>
+                        <tr>
+                            <td>Joseph Fairly</td>
+                            <td>jfairly@hotmail.com</td>
+                            <td>$20.50</td>
+                        </tr>
+                        <tr>
+                            <td>Lacy Yells</td>
+                            <td>lyells@prodigy.net</td>
+                            <td>$2000</td>
+                        </tr>
+                        <tr>
+                            <td>Matt Stewart</td>
+                            <td>mstewart@msn.com</td>
+                            <td>$120,000</td>
+                        </tr>
+                        <tr>
+                            <td>Chester Stone</td>
+                            <td>cstone@yahoo.com</td>
+                            <td>$28,000</td>
+                        </tr>
+                        <tr>
+                            <td>Tracey Stewart</td>
+                            <td>tstewart@lycos.com</td>
+                            <td>$45,000</td>
+                        </tr>
+                        <tr>
+                            <td>Jack Carly</td>
+                            <td>jcarly@rocketmail.com</td>
+                            <td>$98,000</td>
+                        </tr>
+                        <tr>
+                            <td>Nathan Reade</td>
+                            <td>nreade@bbn.com</td>
+                            <td>$250,000</td>
+                        </tr>
+                </tbody>
+            </table>
+            </div>
+            <h3>Employee Data in Complex Table</h3>
+            <div id="table2">
+            <figure>
+                <figcaption>Employee Information</figcaption>
+                <table>
+                    <thead>
+                        <tr class="header-row">
+                            <th>Category</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Total Years</th>
+                            <th>Salary</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th rowspan="3">Marketing</th>
+                            <td>Christopher Tyrone</td>
+                            <td>ctyrone@juno.com</td>
+                            <td>12</td>
+                            <td>$12.8B</td>
+                        </tr>
+                        <tr>
+                            <td>Jack Carly</td>
+                            <td>jcarly@rocketmail.com</td>
+                            <td>10</td>
+                            <td>$98,000</td>
+                        </tr>
+                        <tr>
+                            <td>Chester Stone</td>
+                            <td>cstone@yahoo.com</td>
+                            <td>11</td>
+                            <td>$28,000</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">Sales</th>
+                            <td>Matt Stewart</td>
+                            <td>mstewart@msn.com</td>
+                            <td>8</td>
+                            <td>$120,000</td>
+                        </tr>
+                        <tr>
+                            <td>Nathan Reade</td>
+                            <td>nreade@bbn.com</td>
+                            <td>18</td>
+                            <td>$250,000</td>
+                        </tr>
+                        <tr>
+                            <td>Tracey Stewart</td>
+                            <td>tstewart@lycos.com</td>
+                            <td>3</td>
+                            <td>$45,000</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="2">Accountant</th>
+                            <td>Lacy Yells</td>
+                            <td>lyells@prodigy.net</td>
+                            <td>5</td>
+                            <td>$2000</td>
+                        </tr>
+                        <tr>
+                            <td>Joseph Fairly</td>
+                            <td>jfairly@hotmail.com</td>
+                            <td>1</td>
+                            <td>$20.50</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3">Total Annual Salary Budget:</th>
+                            <td>68</td>
+                            <td>$12,800,543,020.50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </figure>
+            </div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

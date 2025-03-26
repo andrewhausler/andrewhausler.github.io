@@ -117,9 +117,35 @@ h2 {
     border-bottom: 2px solid black;
 }
 
-.gridicon {
-    width: 30px;
-    height: 30px;
+thead>tr>th, tbody>tr>th {
+    border: 3px solid black;
+}
+
+#table1, #table2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+table {
+    border: 2px solid black;
+}
+
+tbody>tr>td {
+    border: 1px solid black;
+}
+
+tr:nth-child(even) {
+    background-color: salmon;
+}
+
+.nav-spacer {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#ordered-data {
+    display: block;
 }
 
 @media (max-width: 400px) {
