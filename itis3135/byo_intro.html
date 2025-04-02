@@ -25,11 +25,12 @@
                         <label>Academic Background: <input name="academic-background" type="text" value="I currently have my high school diploma and I am currently a student at UNC Charlotte CCI and working towards my concentration in Software Engineering."></label>
                         <label>Background In Web Development: <input name="web-background" type="text" value="My current background in this subject is I did play around with HTML, CSS, and Javascript when I was building a weather website for fun and practice. Though the practice was more focussed on me working on my Python skills and Flask. But I have been wanting to work on the front-end a lot now and so I feel good with the past knowledge and getting the full experience with this course."></label>
                         <label>Primary Computer Platform: <input name="comp-platform" type="text" value="I work with both Windows, Mac, and Rasbian. Though I prefer Mac because they make everything have round corners and make it clean in my opinion. I also like how Terminal is very similar to Linux CLI and everytime on a new Windows I have to install Ubuntu CLI because I can't take PowerShell."></label>
-                        <label>Courses Currently Taking: 
+                        <div>
+                             Courses Currently Taking: 
                             <ul id="courseTextBox"></ul>
                             <button onclick="addACourse(event)">Add A Course</button>
                             <button onclick="resetCourses(event)" id="reset-courses">Reset Courses</button>
-                        </label>
+                        </div>
                         <label>Funny Things? <input name="funny-things" type="text" value="I am a huge Audi enthusiast. I currently own an Audi a4 b8 S-line. I live in Huntersville so each weekend I head back home to drive, wash, and modify my car."></label>
                         <label>Anything Else? <input name="anything-else" type="text" value="I love talking about anything Comp Sci or automotive related"></label>
                         <label>I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available. <input type="checkbox"></label>
@@ -43,7 +44,7 @@
             <div id="completed-form">
                 <div id="completed-content">
                 </div>
-                <div id="form-buttons">
+                <div id="form-reset">
                     <button onclick="resetForm()">Reset/Edit Form</button>
                 </div>
             </div>
