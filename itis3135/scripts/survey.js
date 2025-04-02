@@ -6,7 +6,7 @@ const form = document.getElementById("form");
 completedForm.hidden = true;
 
 // If no content inside the courses then reset button not needed
-if(content.textContent === "") {
+if (content.textContent === "") {
     resetButton.hidden = true;
 }
 
@@ -33,54 +33,33 @@ function addACourse(event) {
 
     resetButton.hidden = false;
 
-    deleteButton.addEventListener("click", (event)=>{
+    deleteButton.addEventListener("click", (event) => {
         event.preventDefault();
         content.removeChild(deleteButton);
         content.removeChild(bulletPoint);
         content.removeChild(breaker);
         content.removeChild(padding);
-        if(content.textContent === "") {
+        if (content.textContent === "") {
             resetButton.hidden = true;
         }
         return;
     });
 }
 
-function resetCourses(event) {
+function loadImage(event) {
     event.preventDefault();
-    content.innerHTML = "";
-    resetButton.hidden = true;
-    return;
+    var imageFile = document.getElementById("image").files[0];
+    const imageURL = URL.createObjectURL(imageFile);
+    return imageURL;
 }
-
-form.addEventListener("submit", (event)=>{
-    event.preventDefault();
-    const userInputs = form.querySelectorAll("input");
-    for(let i=0; i<userInputs.length; i++) {
-        if(userInputs[i].type == "text" && userInputs[i].value == "") {
-            alert("Please Answer All Boxes To Continue!");
-            return;
-        }
-        else if(userInputs[i].type == "file" && userInputs[i].files.length <= 0) {
-            alert("Please Provide A File To Continue!");
-            return;
-        }
-        else if(userInputs[i].type == "checkbox" && !userInputs[i].checked)
-        {
-            alert("Please Agree To The Terms Of Service!");
-            return;
-        }
-    }
-    parseData(event, userInputs);
-});
 
 function parseData(event, userInputs) {
     event.preventDefault();
     const completedContent = document.getElementById("completed-content");
     completedForm.hidden = false;
-    let courseContent = ``
-    for(let i=10; i<userInputs.length-5; i++) {
-        courseContent += `<li class="courses">${userInputs[i].value}</li>`
+    let courseContent = ``;
+    for (let i=10; i<userInputs.length-5; i++) {
+        courseContent += `<li class="courses">${userInputs[i].value}</li>`;
     }
     completedContent.innerHTML = `<h2>Introduction</h2>
             <h3 class="name">${userInputs[0].value} ${userInputs[1].value} || ${userInputs[2].value}</h3>
@@ -101,17 +80,38 @@ function parseData(event, userInputs) {
                 </li>
                 <li>Funny/Interesting Items to Remember me by: <p class="intro-descriptions">${userInputs[userInputs.length-5].value}</p></li>
                 <li>I'd also like to Share: <p class="intro-descriptions">${userInputs[userInputs.length-4].value}</p></li>
-            </ul>`
+            </ul>`;
     formBody.hidden = true;
     return;
 }
 
-function loadImage(event) {
+function resetCourses(event) {
     event.preventDefault();
-    var imageFile = document.getElementById("image").files[0];
-    const imageURL = URL.createObjectURL(imageFile);
-    return imageURL;
+    content.innerHTML = "";
+    resetButton.hidden = true;
+    return;
 }
+
+form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    const userInputs = form.querySelectorAll("input");
+    for (let i=0; i<userInputs.length; i++) {
+        if (userInputs[i].type === "text" && userInputs[i].value === "") {
+            alert("Please Answer All Boxes To Continue!");
+            return;
+        }
+        else if (userInputs[i].type === "file" && userInputs[i].files.length <= 0) {
+            alert("Please Provide A File To Continue!");
+            return;
+        }
+        else if (userInputs[i].type === "checkbox" && !userInputs[i].checked)
+        {
+            alert("Please Agree To The Terms Of Service!");
+            return;
+        }
+    }
+    parseData(event, userInputs);
+});
 
 function resetForm() {
     const completedContent = document.getElementById("completed-content");
