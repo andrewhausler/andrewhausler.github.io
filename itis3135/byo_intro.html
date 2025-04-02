@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BYO Intro</title>
+        <link rel="stylesheet" href="./styles/default.css">
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <main>
+            <div id="form-body">
+                <h2>BYO Intro</h2>
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page.</h3>
+                <div id="byo-form">
+                    <form id="form">
+                        <label>First Name: <input name="first-name" type="text" size="20" value="Andrew"></label>
+                        <label>Last Name: <input name="last-name" type="text" size="20" value="Hausler"></label>
+                        <label>Mascot: <input name="mascot" type="text" size="20" value="Artificial Hellbender"></label>
+                        <label>Image: <input id="image" name="image" type="file" accept=".png, .jpg"></label>
+                        <label>Image Caption: <input name="image-caption" type="text" value="Me standing in my apartment"></label>
+                        <label>Personal Background: <input name="personal-background" type="text" value="Was born in NC, at age 4 I encountered an AVM rupture which set me back and made learning much more difficult. I had gone through years of therapy and was able to successfully recover though some things can still be more challenging for me. I have always been interested in computers and the science behind them since I was a kid. During the summer of my sophmore year of high school I began taking Computer Science courses provided by the University of Michigan off of Coursera. I then took a Python and Java course during my junior and senior year of high school. I noticed UNC Charlotte has a great Comp Sci program so I decided to only apply for that college. Though during my senior year I did start having a lot of interest in cars as I had gotten my first car. Though I did have some thoughts of going into a trade school for automotive but I decided I still wanted to pursue a career in Computer Science."></label>
+                        <label>Professional Background: <input name="professional-background" type="text" value="When I turned 16 I applied to Regal Cinemas and have been working there for the last 3-4 years. I am currently still working there but only during holidays and the summer."></label>
+                        <label>Academic Background: <input name="academic-background" type="text" value="I currently have my high school diploma and I am currently a student at UNC Charlotte CCI and working towards my concentration in Software Engineering."></label>
+                        <label>Background In Web Development: <input name="web-background" type="text" value="My current background in this subject is I did play around with HTML, CSS, and Javascript when I was building a weather website for fun and practice. Though the practice was more focussed on me working on my Python skills and Flask. But I have been wanting to work on the front-end a lot now and so I feel good with the past knowledge and getting the full experience with this course."></label>
+                        <label>Primary Computer Platform: <input name="comp-platform" type="text" value="I work with both Windows, Mac, and Rasbian. Though I prefer Mac because they make everything have round corners and make it clean in my opinion. I also like how Terminal is very similar to Linux CLI and everytime on a new Windows I have to install Ubuntu CLI because I can't take PowerShell."></label>
+                        <label>Courses Currently Taking: 
+                            <ul id="courseTextBox"></ul>
+                            <button onclick="addACourse(event)">Add A Course</button>
+                            <button onclick="resetCourses(event)" id="reset-courses">Reset Courses</button>
+                        </label>
+                        <label>Funny Things? <input name="funny-things" type="text" value="I am a huge Audi enthusiast. I currently own an Audi a4 b8 S-line. I live in Huntersville so each weekend I head back home to drive, wash, and modify my car."></label>
+                        <label>Anything Else? <input name="anything-else" type="text" value="I love talking about anything Comp Sci or automotive related"></label>
+                        <label>I understand that what is on this page is not password protected and I will not put anything here that I don't want publicly available. <input type="checkbox"></label>
+                        <div id="form-buttons">
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div id="completed-form">
+                <div id="completed-content">
+                </div>
+                <div id="form-buttons">
+                    <button onclick="resetForm()">Reset/Edit Form</button>
+                </div>
+            </div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/HTMLInclude.js"></script>
+        <script src="scripts/survey.js"></script>
+    </body>
+</html>

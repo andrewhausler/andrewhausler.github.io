@@ -159,6 +159,35 @@ tr:nth-child(even) {
     height: 900px;
 }
 
+/** BYO Content **/
+#byo-form {
+    display: flex;
+    justify-content: center;
+}
+
+#form-buttons, #form-reset {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form>label {
+    margin: 10px;
+}
+
+form>input {
+    width: 60px;
+}
+
+#form-body>h3 {
+    text-align: center;
+}
+
 
 @media (max-width: 400px) {
     header, main, footer {
