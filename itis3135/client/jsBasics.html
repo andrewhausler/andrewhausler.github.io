@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Curious Niner</title>
+        <link rel="stylesheet" href="./styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div id="upper-header">
+                <a id="title" href="./home.html"><h1>A Curious Niner</h1></a>
+                <div id="search-bar"> 
+                    <p>Search for a language:</p>
+                    <input id="search" type="text">
+                    <button id="submit-search">Submit</button>
+                </div> 
+            </div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="home.html">Home</a>
+                <a href="htmlBasics.html">HTML</a>
+                <a href="cssBasics.html">CSS</a>
+                <a href="jsBasics.html">JavaScript</a>
+            </nav>
+        </header>
+        <main>
+            <div id="table-of-contents">
+                <h3>Table of Contents</h3>
+                <nav>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#basics">Basics</a>
+                    <ol>
+                        <li><a href="#initialization">Initialization and Syntax</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div id="navbar-button">
+                <p>|</p>
+            </div>
+            <div id="main-body">
+                <h2>JavaScript</h2>
+                <section id="introduction">
+                    <h3>Introduction</h3>
+                    <p>JavaScript is a scripting language that allows you to work with static HTML files to make it more interactive.</p>
+                    <p>With JavaScript you can simply add the path to your script file and include that in the HTML. Then you can immediately start calling and assigning all tags, classes, and elements.</p>
+                </section>
+                <section id="basics">
+                    <h3>Basics</h3>
+                    <section id="initialization">
+                        <h4>Initialization and Syntax</h4>
+                        <p>JavaScript is very similar to other languages out their like Python, Java, etc. It has very similar data types and syntax as well as having re-assigning variables and non-re-assigning variables.</p>
+                        <p>JavaScript also includes its own implementation of conditionals, loops, objects, and arrays, making it a flexible and powerful language for various programming tasks.</p>
+                        <figure>
+                            <img src="./images/js-syntax-basics.png" alt="Image showing JavaScript syntax and coding format.">
+                            <figcaption>Re-assignable and non-re-assignable variables being used in a function.</figcaption>
+                        </figure>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="./scripts/default.js"></script>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Curious Niner</title>
+        <link rel="stylesheet" href="./styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div id="upper-header">
+                <a id="title" href="./home.html"><h1>A Curious Niner</h1></a>
+                <div id="search-bar"> 
+                    <p>Search for a language:</p>
+                    <input id="search" type="text">
+                    <button id="submit-search">Submit</button>
+                </div> 
+            </div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="home.html">Home</a>
+                <a href="htmlBasics.html">HTML</a>
+                <a href="cssBasics.html">CSS</a>
+                <a href="jsBasics.html">JavaScript</a>
+            </nav>
+        </header>
+        <main>
+            <div id="table-of-contents">
+                <h3>Table of Contents</h3>
+                <nav>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#basics">Basics</a>
+                    <ol>
+                        <li><a href="#initialization">Initialization and Syntax</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div id="navbar-button">
+                <p>|</p>
+            </div>
+            <div id="main-body">
+                <h2>CSS</h2>
+                <section id="introduction">
+                    <h3>Introduction</h3>
+                    <p>CSS stands for Cascading Style Sheets and is used for controlling the style and layout of your HTML. CSS allows for you to access very specific elements, classes, and ids, to control even the most nested element in your webpage.</p>
+                    <p>CSS can be used directly inside of your HTML or it can be outside on a separate file and have it's directory linked to your HTML.</p>
+                </section>
+                <section id="basics">
+                    <h3>Basics</h3>
+                    <section id="initialization">
+                        <h4>Initialization and Syntax</h4>
+                        <p>CSS follows a format called declarative syntax. Declarative syntax follows by starting with a selector which could be either a tag, class, or an id.</p>
+                        <p>Inside the selector is where you would control the selectors properties such as background, color, margin, padding, etc. These all allow for formatting and positioning on your webpage.</p>
+                        <figure>
+                            <img src="./images/css-declarative-syntax.png">
+                            <figcaption>A CSS selector calling multiple class names and setting it's properties.</figcaption>
+                        </figure>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="./scripts/default.js"></script>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>

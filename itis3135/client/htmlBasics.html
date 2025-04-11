@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Curious Niner</title>
+        <link rel="stylesheet" href="./styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div id="upper-header">
+                <a id="title" href="./home.html"><h1>A Curious Niner</h1></a>
+                <div id="search-bar"> 
+                    <p>Search for a language:</p>
+                    <input id="search" type="text">
+                    <button id="submit-search">Submit</button>
+                </div> 
+            </div>
+            <nav>
+                <a href="about.html">About</a>
+                <a href="home.html">Home</a>
+                <a href="htmlBasics.html">HTML</a>
+                <a href="cssBasics.html">CSS</a>
+                <a href="jsBasics.html">JavaScript</a>
+            </nav>
+        </header>
+        <main>
+            <div id="table-of-contents">
+                <h3>Table of Contents</h3>
+                <nav>
+                    <a href="#introduction">Introduction</a>
+                    <a href="#basics">Basics</a>
+                    <ol>
+                        <li><a href="#initialization">Initialization and Syntax</a></li>
+                    </ol>
+                </nav>
+            </div>
+            <div id="navbar-button">
+                <p>|</p>
+            </div>
+            <div id="main-body">
+                <h2>HTML</h2>
+                <section id="introduction">
+                    <h3>Introduction</h3>
+                    <p>HTML stands for Hypertext Markup Language. It is used in all web application you see whenever you are viewing the web.</p>
+                    <p>HTML by itself is a static markup language, meaning that all content remands unchanged and whatever data is on that file remains and doesn't change. The only way it will change is if you send a new request to the webserver that is running on the site you are using.</p>
+                </section>
+                <section id="basics">
+                    <h3>Basics</h3>
+                    <section id="initialization">
+                        <h4>Initialization and Syntax</h4>
+                        <p>HTML is much more laid back with structuring a webpage but the browser that the webpage will run is not. It's important to follow the correct structure in developing a webpage to run as it should.</p>
+                        <p>Every HTML page should always begin with <code>&lt;!DOCTYPE html&gt;</code>. The doctype allows your browser to know you want to use up-to-date HTML and to not use any legacy versions.</p>
+                        <p>These brackets <code>&lt;&gt;</code> are called angle brackets. Angle brackets are used to define the HTML tag you want to use when laying out your HTML. There are many different types of tags headings, paragraphs, images, etc. They all allow the browser to identify your layout.</p>
+                        <figure>
+                            <img src="./images/html-doctype.png">
+                            <figcaption>The proper HTML doctype initialization of an HTML page.</figcaption>
+                        </figure>
+                    </section>
+                </section>
+            </div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="./scripts/default.js"></script>
+        <script src="scripts/HTMLInclude.js"></script>
+    </body>
+</html>
