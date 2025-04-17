@@ -203,3 +203,108 @@ h3 {
         text-align: center;
     }
 }
+
+/* Slideshow Styling */
+
+.slideshow>img {
+    width: 436px;
+    height: 224px;
+}
+
+.slideshow-image {
+    border: 2px solid black;
+}
+
+.slideshow {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+.slideshow>figcaption {
+    margin-left: 30px;
+    font-size: 20px;  
+}
+
+#lower-tabs {
+    display: flex;
+    overflow-x: auto;
+    border: 2px solid black;
+}
+
+#frame {
+    position: relative;
+    display: block;
+    margin-top: 20px;  
+}
+
+#img-frame>div {
+    overflow-x: auto;
+}
+
+.img-btn {
+    width: 136px;
+    height: 54px;
+    opacity: 50%;
+}
+
+.img-btn:hover {
+    opacity: 100%;
+}
+
+#img-frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: auto;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+#image {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+#image>img {
+    width: 600px;
+    height: 400px;
+}
+
+#image>p {
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border: 3px solid black;
+    color: black;
+    bottom: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#prev {
+    position: absolute;
+    color: white;
+    top: 45%;
+    left: 10px;
+    padding: 10px;
+}
+#next {
+    position: absolute;
+    color: white;
+    top: 45%;
+    right: 10px;
+    padding: 10px;
+}
+
+#prev:hover {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+#next:hover {
+    background-color: rgba(0, 0, 0, 0.5)
+}
+

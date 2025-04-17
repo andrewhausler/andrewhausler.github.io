@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Slide Show</title>
+        <link rel="stylesheet" href="./styles/default.css">
+        <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+        <main>
+            <h2>Slideshow</h2>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/apple.jpeg" >
+                <figcaption>A - for Apple</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/nitrous.jpeg">
+                <figcaption>N - for Nitrous</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/differential.jpeg">
+                <figcaption>D - for Differential</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/rocket.jpeg">
+                <figcaption>R - for Rocket</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/electrons.jpeg">
+                <figcaption>E - for Electrons</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/wire.jpg">
+                <figcaption>W - for Wire</figcaption>
+            </figure>
+            <!-- End Of First Name -->
+            <!-- Start Of Last Name -->
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/hotdog.jpeg">
+                <figcaption>H - for Hotdog</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/acorn.jpeg">
+                <figcaption>A - for Acorn</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/umbrella.jpeg">
+                <figcaption>U - for Umbrella</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/silicon.jpeg">
+                <figcaption>S - for Silicon</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/locomotive.jpeg">
+                <figcaption>L - for Locomotive</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/eraser.jpeg">
+                <figcaption>E - for Eraser</figcaption>
+            </figure>
+            <figure class="slideshow">
+                <img class="slideshow-image" src="./images/resonator.jpeg">
+                <figcaption>R - for Resonator</figcaption>
+            </figure>
+
+            <div id="slideshow-body">
+                <h3>Slideshow Gallery</h3>
+                <div id="frame">
+                    <div id="img-frame">
+                        <div id="image">
+                            <a id="prev" onclick="changeImageBy(event, -1)">&#10094;</a>
+                            <a id="next" onclick="changeImageBy(event, 1)">&#10095;</a>
+                            <img src="./images/apple.jpeg" alt="A - for Apple"> 
+                            <p>A - for Apple</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="lower-tabs">
+                    <img class="img-btn" src="./images/apple_105x54.jpeg" alt="A - for Apple">
+                    <img class="img-btn" src="./images/nitrous_105x54.jpeg" alt="N - for Nitrous">
+                    <img class="img-btn" src="./images/differential_105x54.jpeg" alt="D - for Differential">
+                    <img class="img-btn" src="./images/rocket_105x54.jpeg" alt="R - for Rocket">
+                    <img class="img-btn" src="./images/electrons_105x54.jpeg" alt="E - for Electrons">
+                    <img class="img-btn" src="./images/wire_105x54.jpg" alt="W - for Wire">
+                    <img class="img-btn" src="./images/hotdog_105x54.jpeg" alt="H - for Hotdog">
+                    <img class="img-btn" src="./images/acorn_105x54.jpeg" alt="A - for Acorn">
+                    <img class="img-btn" src="./images/umbrella_105x54.jpeg" alt="U - for Umbrella">
+                    <img class="img-btn" src="./images/silicon_105x54.jpeg" alt="S - for Silicon">
+                    <img class="img-btn" src="./images/locomotive_105x54.jpeg" alt="L - for Locomotive">
+                    <img class="img-btn" src="./images/eraser_105x54.jpeg" alt="E - for Eraser">
+                    <img class="img-btn" src="./images/resonator_105x54.jpeg" alt="R - for Resonator">
+                </div>
+            </div>
+            <div id="ai-prompts">
+                <section>
+                    <h3>All AI Prompts Used</h3>
+                    <ol>
+                        <li>Generate a photo of an apple in landscape.</li>
+                        <li>Generate a photo of nitrous in landscape.</li>
+                        <li>Generate a photo of a differential in landscape.</li>
+                        <li>Generate a photo of a rocket in landscape.</li>
+                        <li>Generate a photo of electrons in landscape.</li>
+                        <li>Generate a photo of a wire in landscape.</li>
+                        <li>Generate a photo of hotdog in landscape.</li>
+                        <li>Generate a photo of an acorn in landscape.</li>
+                        <li>Generate a photo of an umbrella in landscape.</li>
+                        <li>Generate a photo of silicon in landscape.</li>
+                        <li>Generate a photo of a locomotive in landscape.</li>
+                        <li>Generate a photo of an eraser in landscape.</li>
+                        <li>Generate a photo of a resonator in landscape.</li>
+                    </ol>
+                    <p>All prompts were used with ChatGPT 4o.</p>
+                </section>
+            </div>
+        </main>
+        <div data-include="components/footer.html"></div>
+        <script src="./scripts/HTMLInclude.js"></script>
+        <script src="./scripts/slideshow.js"></script>
+    </body>
+</html>
