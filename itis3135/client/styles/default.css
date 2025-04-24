@@ -142,11 +142,14 @@ img {
     border-radius: 10px;
 }
 
+.img-figure {
+    overflow: auto;
+}
+
 figure {
     display: block;
     align-items: center;
     text-align: center;
-    overflow: auto;
 }
 
 #upper-header {
@@ -183,11 +186,4 @@ figure {
     }
 }
 
-/* Slideshow Styling */
-
-.slideshow>img {
-    display: block;
-    width: 100px;
-    height: 100px;
-}
 
