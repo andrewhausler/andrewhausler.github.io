@@ -308,3 +308,25 @@ h3 {
     background-color: rgba(0, 0, 0, 0.5)
 }
 
+#who {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+
+#client-image {
+    width: 600px;
+}
+
+.client-review {
+    font-weight: normal;
+}
+
+span {
+    font-weight: bold;
+}
+
+#review-content {
+    margin-left: 50px;
+}
+
