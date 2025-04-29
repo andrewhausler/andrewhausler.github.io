@@ -5,6 +5,7 @@ let pulling = false;
 
 function setup() {
     let canvas = createCanvas(500, 500, WEBGL);
+    canvas.parent("myCanvas");
     canvas.center();
 }
 
