@@ -1,3 +1,4 @@
+// Table Of Contents Hide/Show
 const tableOfContents = document.getElementById("table-of-contents");
 const navbarButton = document.getElementById("navbar-button");
 const mainBody = document.getElementById("main-body");
@@ -16,6 +17,8 @@ navbarButton.addEventListener("click", (event) => {
     }
 });
 
+
+// Language Searching
 const inputSearch = document.getElementById("search");
 const submitSearch = document.getElementById("submit-search");
 
@@ -36,4 +39,24 @@ submitSearch.addEventListener("click", () => {
         }
     }
     alert("There is no link to: " + inputSearch.value);
+});
+
+// Image Hide/Show
+const imgBtn = document.querySelectorAll(".img-btn");
+
+imgBtn.forEach((div) => {
+    const btn = div.querySelector("button");
+    const figure = div.querySelector("figure");
+
+    btn.addEventListener("click", (event) => {
+        event.preventDefault();
+        if (figure.style.display === "none" || figure.style.display === "") {
+            figure.style.display = "block";
+            btn.textContent = "Hide Example";
+        }
+        else {
+            figure.style.display = "none";
+            btn.textContent = "Show Example";
+        }
+    });
 });
