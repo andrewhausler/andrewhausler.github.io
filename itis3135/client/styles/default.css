@@ -65,6 +65,8 @@ h3 {
 }
 
 main {
+    max-width: 1500px;
+    width: 90%;
     margin-left: 60px;
     margin-top: 40px;
     display: flex;
@@ -176,6 +178,11 @@ figure {
 #search-bar>img {
     width: 150px;
     height: 20px;
+}
+
+footer>small {
+    margin-left: 40px;
+    padding-bottom: 20px;
 }
 
 @media (max-width: 880px) {
